@@ -216,7 +216,8 @@ struct ContentView: View {
                 
                 OptionsSelectView(
                     optionsInfos: $mainInfos,
-                    selectedOption: $selectedMainOption, onSelectedActionBlock: { view, selectedOption in
+                    selectedOption: $selectedMainOption,
+                    onSelectedActionBlock: { view, selectedOption in
                         
                         // Main Infos Selected Action
                         setting(selectedMainOption: selectedOption) // 設定主選項
